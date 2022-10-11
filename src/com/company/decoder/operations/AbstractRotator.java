@@ -1,19 +1,20 @@
-package com.company.decoder;
+package com.company.decoder.operations;
 
+import com.company.decoder.utility.Alphabet;
 import java.io.*;
 import java.util.*;
 
-public class UtilityClass implements Alphabet {
-    final int ENCODE = 1;
-    final int DECODE = 2;
-    final int STATIC_ANALYSIS = 3;
+public abstract class AbstractRotator implements Alphabet {
+    protected final int ENCODE = 1;
+    protected final int DECODE = 2;
+    protected final int STATIC_ANALYSIS = 3;
     private String rotatedUppercaseEng;
     private String rotatedLowercaseEng;
     private String rotatedUppercaseRu;
     String rotatedLowercaseRu;
-    String fileName;
-    String fileForStaticAnalysis;
-    int key;
+    protected String fileName;
+    protected String fileForStaticAnalysis;
+    protected int key;
 
     public void write(String outputFileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName));

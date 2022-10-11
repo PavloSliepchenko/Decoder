@@ -1,5 +1,10 @@
-package com.company.decoder;
+package com.company.decoder.GUI;
 
+
+import com.company.decoder.operations.Decoder;
+import com.company.decoder.operations.Encoder;
+import com.company.decoder.operations.StaticAnalysis;
+import com.company.decoder.operations.AbstractRotator;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -10,7 +15,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-public class GUI extends UtilityClass {
+public class GUI extends AbstractRotator {
     private JPanel panel;
     private JFrame frame;
     private JButton encode;

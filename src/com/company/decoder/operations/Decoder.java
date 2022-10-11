@@ -1,6 +1,6 @@
-package com.company.decoder;
+package com.company.decoder.operations;
 
-public class Decoder extends UtilityClass{
+public class Decoder extends AbstractRotator {
     public Decoder(String fileName, int key) {
         this.fileName = fileName;
         this.key = key;

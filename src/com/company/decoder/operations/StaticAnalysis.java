@@ -1,4 +1,4 @@
-package com.company.decoder;
+package com.company.decoder.operations;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class StaticAnalysis extends UtilityClass {
+public class StaticAnalysis extends AbstractRotator {
     private final int LETTERS_IN_ALPHABET = Math.max(UPPERCASE_ENG.size(), UPPERCASE_RU.size());
     private final int PERCENT = 60;
 

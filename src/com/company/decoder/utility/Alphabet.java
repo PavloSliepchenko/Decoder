@@ -1,4 +1,4 @@
-package com.company.decoder;
+package com.company.decoder.utility;
 
 import java.util.Arrays;
 import java.util.List;

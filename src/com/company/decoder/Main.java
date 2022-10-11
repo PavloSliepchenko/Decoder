@@ -1,6 +1,9 @@
-package com.company;
+package com.company.decoder;
 
-import com.company.decoder.*;
+import com.company.decoder.GUI.GUI;
+import com.company.decoder.operations.Decoder;
+import com.company.decoder.operations.Encoder;
+import com.company.decoder.operations.StaticAnalysis;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
